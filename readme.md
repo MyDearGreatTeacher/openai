@@ -1,0 +1,110 @@
+# OpenAI Programming
+- [OpenAI官方網址](OpenAI.md)
+- [OpenAI developer platform:官方說明文件](https://platform.openai.com/docs/overview)
+- [OpenAI developer platform:API reference](https://platform.openai.com/docs/api-reference)
+## 系統架構與元件
+- [OpenAI API](OpenAI_API.md)
+  - API 參數解析
+  - 錯誤處理方式與例外機制
+  - API 存取限制
+  - 測試 OpenAI API
+    - 使用 Playground 熟悉 API
+    - 使用 Python requests 模組呼叫 API
+    - 使用 curl 工具快速測試 API
+- [使用OpenAI Playground分析OpenAI API ](Playground.md)
+- [ENDPOINTS API(端點API)](ENDPOINTS_API.md)
+- [Assistants API(AI 助理)](Assistants_API.md) 功能更強大
+  - 使用內建工具
+    - Code interpreter
+    - Retrieval 檢索器 - RAG（Retrieval-Augmented Generation）
+    - Function calling
+- [擴充OpenAI功能]()
+  - [Function Calling 機制](Function_Calling.md)
+  - 使用Plug-ins==> 補足OpenAI功能不足
+    - 即時資訊處理 
+  - OpenAI FineTuning(微調你的大模型)
+
+# 範例學習
+- [labs_1](./code/labs_1.md)
+  - Google Colab的設定 
+- [labs_2](./code/labs_2.md)
+- [labs_3](./code/labs_3.md)
+  - 快速掌握OPENAI API的各項功能
+  - 參考 [CAPABILITIES]()
+- [labs_4](./code/labs_4.md)
+  - [Prompt examples的各種範例](https://platform.openai.com/docs/examples) 
+- [labs_5_Assistant API開發](./code/labs_5.md)
+
+- [labs_6_Local端開發](./code/labs_6.md)
+# OpenAI專案開發
+- (1):AI Bot聊天機器人 ==> 即時通訊平台
+- (2):web_based AI Chatbot
+
+### OpenAI專案開發(1):AI Bot聊天機器人 ==> 即時通訊平台
+- 介紹
+  - [AI聊天機器人：定義、核心技術與企業應用一覽](https://blog.tsti.com/what-is-ai-chatbot/)
+  - [AI 聊天機器人：一文看清 Chatbot 原理、收費及免費選擇！](https://sleekflow.io/zh-hk/blog/%E8%81%8A%E5%A4%A9%E6%A9%9F%E6%A2%B0%E4%BA%BA)
+- 即時通訊平台
+  - Facebook Messenger
+    - 荷蘭皇家航空公司（KLM）是第一家與Facebook Mesenger合作Bot的航空公司 
+  - WeChat
+  - LINE
+- 類型
+  - Line AI Bot
+  - Discord AI Bot
+  - Slack Bot 
+  - Telegram bot
+    - [Bots: An introduction for developers - Telegram APIs](https://core.telegram.org/bots)
+    - [可能是全网最基础的创建telegram bot的教程](https://zhuanlan.zhihu.com/p/30450761)
+    - [从零开始写一个Telegram Bot - 知乎](https://zhuanlan.zhihu.com/p/60933824)
+      - 兩種獲取使用者發送命令的方式: polling VS webhook
+- 主題
+  - AI 客製化投資理財
+  - StockGPT：專業的證券分析機器人
+
+### OpenAI專案開發(2):web_based AI Chatbot
+- 參考資料
+  - [AI 聊天機器人︰7個免費選擇+限制（附最佳方案推介）](https://www.wati.io/blog/ai%e8%81%8a%e5%a4%a9%e6%a9%9f%e5%99%a8%e4%ba%ba-chatbot-%e5%85%8d%e8%b2%bb/)
+  - [不只ChatGPT！這10款生成式AI讓工作、生活更便利](https://www.businessweekly.com.tw/focus/blog/3011811)
+- AI-powered Chatbots
+  - Dialogflow (by Google) - a natural language processing platform
+  - IBM Watson Assistant - a cloud-based AI platform
+  - Microsoft Bot Framework - a set of tools for building conversational AI\
+  - Rasa - an open-source conversational AI framework
+  - 大語言提供者自家的web-based Bot
+    - ChatGPT(OpenAI)
+  - 整合型Bot
+    - [POE| Fast, Helpful AI Chat](https://poe.com/)
+      - Quora 一個創新的平台，結合了 ChatGPT 和 Anthropic 技術，透過 AI 聊天機器人與用家進行來回對話。
+      - 提示詞產生器
+        - https://poe.com/MidjourneyV6Prompt  
+    - [AI Chat]()
+  - 主題型
+    - [Jasper | AI copilot for enterprise marketing teams](https://www.jasper.ai/free-trial?_from=ads&fp_sid=1-b-657e1c011c2816ced36a7a486b75d88d)
+      - 利用 OpenAI 的 GPT-3.5 語言模型，能提供自然的人類語言回應
+      - 使用豐富的工具幫助生成高質量的文案，包括檢查語法、抄襲問題和提供多種模版，適合用來生成精煉文案。
+      - 專門服務行銷廣告文案需求的AI聊天機器人，堪稱商務與行銷人員的最佳利器。 
+- Chatbot Platforms:
+  - ManyChat - a popular platform for building chatbots on messaging platforms
+  - MobileMonkey - a platform for building chatbots on Facebook Messenger and other messaging platforms
+  - Tars - a platform for building conversational AI on various channels
+- 個人免費 AI Chatbot 
+  - [Chatsonic|AI Chat Online for Free - Ask AI Chatbot]()
+    - Chatsonic 是 Writesonic 推出的 AI 聊天機器人
+    - 使用 GPT-4 模型和 Google 搜尋引擎支援以獲得最新的資訊
+    - 具備語音聽寫和人工智慧圖片生成等功能，可生成高質量的對話內容。
+ - 商用免費 AI Chatbot
+   - Botkit：Botkit 是一個 AI 聊天機器人的開發工具，可用來建立和制定聊天機器人
+     - 支援多個通訊平台，包括 Slack、微信和 Facebook Messenger 等。
+     - 提供豐富的工具和函式庫來處理對話流程、自然語言處理和回應生成等功能。
+   - Flow XO：Flow XO 是一個自動化的聊天機器人平台，它提供了直觀的使用者介面，讓使用者可以輕鬆設置機器人，
+     - 支援多個通訊平台，如 Facebook Messenger、Slack 和Telegram 等
+     - 提供自動化工具和分析功能，讓使用者能夠優化聊天機器人的表現。
+   - Facebook Messenger：Facebook Messenger 是一個流行的即時通訊平台
+     - 透過簡單設置，可以讓客戶與聊天機器人進行對話，獲得即時回應、訂閱通知和享受個性化的服務。
+   - [Microsoft Bot Framework](https://dev.botframework.com/)
+     - 微軟 Bot Framework 是一個聊天機器人開發平台
+     - 支援多種程式語言和通訊平台，如 Microsoft Teams、Facebook、Slack 等。
+     - 提供豐富的工具、SDK和模板，使開發者能夠建立使用語音、瞭解自然語言、回答問題等的聊天機器人。
+     - [Azure AI Bot Service | Microsoft Azure]()
+  - 
